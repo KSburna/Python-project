@@ -1,2 +1,2 @@
-pip install Flask
-pip install waitress
+Flask==2.0.2
+waitress==2.0.0
