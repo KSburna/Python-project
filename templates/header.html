@@ -1,0 +1,50 @@
+<header class="header">
+    <div class="container">
+        <h1><a href="/">Mobile Market</a></h1>
+        <nav>
+            <ul>
+                <li></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/">Home</a></li>
+                {% if not username%}
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Registration</a></li>
+                {% else %}
+                <li><a href="/orders">Orders</a></li>
+                <li><a href="/password-update">Update Password </a></li>
+                <li>|</li>
+                <li>Hi, {{username}}</li>
+                <li><a href="/logout">Logout</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+
+
+
+
+
+<!-- <header>
+    <div class="container">
+        <div class="logo">
+            <h1>Cellmart</h1>
+        </div>
+        <nav>
+            <ul>
+                    <li><a href="/">Home</a></li>
+                {% if not username_in_session%}
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/register">Register</a></li>
+                    {% else %}
+                    <li><a href="/cart">Cart</a></li>
+                    <li><a href="/password-update">Update password</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                    <li>Logged user: {{ username_in_session }}</li>
+                {% endif %}
+            </ul>
+        </nav>
+    </div>
+</header> -->

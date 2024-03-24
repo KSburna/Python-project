@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Mobile Market</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    {% include 'header.html' %}
+
+    <div class="container checkout">
+        <h2 class="title">Checkout</h2>
+        <div class="order-details">
+            <div class="product">
+                <h3 class="product-name">{{product['name']}}</h3>
+                <p class="product-info">Price: $<span class="total">{{product['price']}}</span></p>
+                <p class="product-info">Total: $<span class="price">{{product['price']}}</span></p>
+                <input type="hidden" class="item-price" value="{{product['price']}}">
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <span class="quantity">1</span>
+                    <button class="increment">+</button>
+                </div>
+            </div>
+        </div>
+        <form action="/pay" method="post">
+            <input type="hidden" name="product_id" value="{{product['id']}}">
+            <input type="hidden" name="quantity" class="quantity-input" value="1">
+            <div class="form-group">
+                <label for="delivery_address">Delivery Address:</label>
+                <input type="text" id="delivery_address" name="delivery_address" class="delivery-address" required>
+            </div>
+            <button type="submit" class="pay-button">Pay</button>
+        </form>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

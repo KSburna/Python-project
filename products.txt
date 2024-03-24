@@ -1,0 +1,4 @@
+{"id": 1, "name": "iphone 15 pro", "price": 1199.0, "image_name": "iphone-15-pro.png"}
+{"id": 1, "name": "Oneplus 9", "price": 799.0, "image_name": "oneplus-9.png"}
+{"id": 1, "name": "Samsung S24 ultra", "price": 1299.0, "image_name": "s24-ultra.png"}
+{"id": 1, "name": "Xiaomi mi 11", "price": 599.0, "image_name": "xiaomi-mi-11.png"}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Mobile Market</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    {% include 'header.html' %}
+
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Welcome to Mobile Market, your one-stop shop for all your mobile phone and accessories needs.</p>
+        <!-- Image Slider -->
+        <div class="image-slider">
+            <div class="slide fade">
+                <img src="{{ url_for('static', filename='images/image1.jpg') }}" alt="Slider 1">
+            </div>
+            <div class="slide fade">
+                <img src="{{ url_for('static', filename='images/image2.webp') }}" alt="Slider 2">
+            </div>
+            <!-- Navigation arrows -->
+            <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+            <a class="next" onclick="moveSlide(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Welcome to Mobile Market, your one-stop shop for all your mobile phone and accessories needs.</p>
+        <p>At Mobile Market, we offer a wide range of products including smartphones, tablets, accessories, and more. Our mission is to provide our customers with high-quality products at affordable prices.</p>
+        <p>For any inquiries or assistance, feel free to contact us:</p>
+        <ul>
+            <li>Email: info@mobilemarket.com</li>
+            <li>Telephone: +1 (123) 456-7890</li>
+            <li>Address: 1234 Main Street, London, United Kingdom</li>
+        </ul>
+    </div>
+
+    <!-- Smooth scrolling script -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

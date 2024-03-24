@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders - Mobile Market</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    {% include 'header.html' %}
+
+    <div class="container orders">
+        <h2>My Orders</h2>
+        <div class="order-list">
+            {% for order in orders %}
+            <div class="order">
+                <p>Product: {{ order.product_name }}</p>
+                <p>Quantity: {{ order.quantity }}</p>
+                <p>Price: ${{ order.price }}</p>
+                <p>Total: ${{ order.total }}</p>
+                <p>Delivery address: {{ order.delivery_address }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
