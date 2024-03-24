@@ -1,5 +1,0 @@
-{"username": "akila@gmail.com", "product_id": "1", "delivery_address": "AKILA", "product_name": "Mobile Phone", "quantity": 1, "price": 500.0, "total": 500.0}
-{"username": "akila@gmail.com", "product_id": "1", "delivery_address": "AKILA", "product_name": "Mobile Phone", "quantity": 1, "price": 500.0, "total": 500.0}
-{"username": "akila@gmail.com", "product_id": "1", "delivery_address": "test", "product_name": "Mobile Phone", "quantity": 5, "price": 500.0, "total": 2500.0}
-{"username": "test@gmail.com", "product_id": "1", "delivery_address": "Cecilia Chapman 711-2880 Nulla St. Mankato Mississippi 96522", "product_name": "iphone 15 pro", "quantity": 2, "price": 1199.0, "total": 2398.0}
-{"username": "test@gmail.com", "product_id": "1", "delivery_address": "Theodore Lowe Ap #867-859 Sit Rd. Azusa New York 39531", "product_name": "iphone 15 pro", "quantity": 2, "price": 1199.0, "total": 2398.0}
